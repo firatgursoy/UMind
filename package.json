@@ -1,0 +1,30 @@
+{
+  "name": "umind",
+  "version": "0.0.1",
+  "description": "A visual mind editor based on GGEditor and React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaoli/UMind.git"
+  },
+  "author": {
+    "name": "高力",
+    "email": "3071730@qq.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaoli/UMind/issues"
+  },
+  "homepage": "https://github.com/gaoli/UMind#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
