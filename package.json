@@ -1,6 +1,6 @@
 {
   "name": "umind",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A visual mind editor based on GGEditor and React",
   "main": "dist/bundle.js",
   "scripts": {
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/gaoli/UMind#readme",
   "dependencies": {
-    "dva": "^2.4.0",
+    "dva-no-router": "^1.2.0",
     "gg-editor": "1.2.2",
     "lodash": "^4.17.11",
     "react": "^16.5.1",

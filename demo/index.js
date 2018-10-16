@@ -1,4 +1,4 @@
-const { UMind } = window;
+const { UMind, React, ReactDOM } = window;
 
 const DEFAULT_DATA = {
   roots: [{
@@ -36,7 +36,11 @@ const handleSave = (data) => {
   localStorage.setItem('data', JSON.stringify(data));
 };
 
-UMind.init({
-  data: handleRead(),
-  save: handleSave,
-});
+ReactDOM.render(
+  React.createElement(UMind.default,
+    {
+      data: handleRead(),
+      save: handleSave,
+    }),
+  document.getElementById('root'),
+);
