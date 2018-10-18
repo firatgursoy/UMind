@@ -15,17 +15,13 @@ const DEFAULT_DATA = {
 
 // 读取数据
 const handleRead = () => {
-  let data;
-
   const json = localStorage.getItem('data');
 
   if (json) {
-    data = JSON.parse(json);
-  } else {
-    data = DEFAULT_DATA;
+    return JSON.parse(json);
   }
 
-  return data;
+  return DEFAULT_DATA;
 };
 
 // 保存数据
