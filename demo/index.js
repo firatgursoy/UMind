@@ -13,6 +13,11 @@ const DEFAULT_DATA = {
   }],
 };
 
+// 语言环境
+// 中文: zh-CN（默认）
+// 英文: en-US
+const locale = 'zh-CN';
+
 // 读取数据
 const handleRead = () => {
   const json = localStorage.getItem('data');
@@ -35,6 +40,7 @@ const handleSave = (data) => {
 ReactDOM.render(
   React.createElement(UMind.default,
     {
+      locale,
       data: handleRead(),
       save: handleSave,
     }),
