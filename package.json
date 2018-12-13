@@ -1,6 +1,6 @@
 {
   "name": "umind",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "A visual mind editor based on GGEditor and React",
   "main": "dist/bundle.js",
   "scripts": {
@@ -28,7 +28,8 @@
     "react-color": "^2.14.1",
     "react-copy-to-clipboard": "^5.0.1",
     "react-dom": "^16.5.1",
-    "react-intl-universal": "^1.13.1"
+    "react-intl-universal": "^1.13.1",
+    "socket.io": "^2.1.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.0",
