@@ -1,6 +1,6 @@
 {
   "name": "umind",
-  "version": "0.5.0",
+  "version": "1.0.0",
   "description": "A visual mind editor based on GGEditor and React",
   "main": "dist/bundle.js",
   "scripts": {
