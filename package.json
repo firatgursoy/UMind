@@ -1,11 +1,12 @@
 {
   "name": "umind",
-  "version": "1.1.4",
+  "version": "1.2.0",
   "description": "A visual mind editor based on GGEditor and React",
   "main": "dist/bundle.js",
   "scripts": {
     "start": "webpack-dev-server --config ./tools/webpack.config.dev.js --open",
-    "build": "webpack --config ./tools/webpack.config.prod.js"
+    "build": "node ./scripts/build.js",
+    "build:umd": "rimraf ./dist && webpack --config ./tools/webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +23,7 @@
   "homepage": "https://github.com/gaoli/UMind#readme",
   "dependencies": {
     "dva-no-router": "^1.2.0",
-    "gg-editor": "2.0.1",
+    "gg-editor": "2.0.2",
     "lodash": "^4.17.11",
     "react": "^16.5.1",
     "react-color": "^2.14.1",
@@ -41,6 +42,8 @@
     "@babel/runtime": "^7.2.0",
     "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.4",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "cross-env": "^5.2.0",
     "css-loader": "^2.1.0",
     "cz-conventional-changelog": "^2.1.0",
     "eslint": "^5.11.1",
@@ -52,6 +55,7 @@
     "less-loader": "^4.1.0",
     "postcss-loader": "^3.0.0",
     "postcss-preset-env": "^6.5.0",
+    "rimraf": "^2.6.3",
     "style-loader": "^0.23.1",
     "webpack": "^4.28.2",
     "webpack-cli": "^3.1.2",
